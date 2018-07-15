@@ -32,14 +32,6 @@ body {
   padding: 20px;
 }
 
-.calc-operation {
-  text-align: right;
-  color: #727B86;
-  font-size: 21px;
-  padding-bottom: 10px;
-  border-bottom: dotted 1px;
-}
-
 .calc-typed {
   margin-top: 20px;
   font-size: 35px;
@@ -88,18 +80,6 @@ body {
 .button.l:hover {
   background: #E0B612;
   color: #fff;
-}
-
-.blink-me {
-  color: #E0B612;
-}
-.left {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-}
-
-.button.e {
-   display: block;
 }
 
 .equal {
