@@ -2,13 +2,14 @@
 Simple Calculator Using Angular JS and HTML and CSS
 Online sample @ https://simplecalculator-3761c.firebaseapp.com/
 
-# Function
+# Function and look
 * Addition
 * Subtraction
 * Multiplication
 * Division
 * Power
-* Square Root.
+* Square Root
+* Minimalistic user friendly UI 
 
 # Approach
 This implementation uses modular approach, meaning whenever a new function is required, we just need to add a new button and a new function in JS.
