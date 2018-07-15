@@ -1,0 +1,69 @@
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="js/app.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+
+<head>
+    <title> Welcome to simple calculator.</title>
+</head>
+
+<body>
+
+    <div class="Header">
+        <h1> Simple Calculator</h1>
+        <p>How to use this calculator:</p>
+        <p> 1) PLUS [+] : add two numbers together &nbsp;&nbsp;2)MINUS [-] : minus two numbers together</p>
+        <p> 3) MULTIPLICATION [*] : multiply two numbers together&nbsp;&nbsp;4) DIVISION [/] : input number -> press "/" -> input number -> press "=" </p>
+        <p> 4) Power : x to the power of y &nbsp; &nbsp; 5) Square Root : input number -> press "√" -> press "=" </p>
+    </div>
+
+    <div ng-app="calc" ng-controller="myCtrl">
+        <div class="container">
+            <div class="calc-body">
+                <div class="calc-screen">
+                    <p class="calc-typed" ng-bind="output"></p>
+                </div>
+
+
+                <div class="calc-button-row">
+                    <button type="button" class="button c" ng-click='clear()'>CLEAR</button>
+                    <button type="button" class="button l" ng-click='power()'>^</button>
+                    <button type="button" class="button l" ng-click='sqrt()'>√</button>
+                    <button type="button" class="button l" ng-click='add()'>+</button>
+                </div>
+
+                <div class="calc-button-row">
+                    <button type="button" class="button" ng-click='updateOutput(7)'>7</button>
+                    <button type="button" class="button" ng-click='updateOutput(8)'>8</button>
+                    <button type="button" class="button" ng-click='updateOutput(9)'>9</button>
+                    <button type="button" class="button l" ng-click='subtract()'>-</button>
+                </div>
+
+                <div class="calc-button-row">
+                    <button type="button" class="button" ng-click='updateOutput(4)'>4</button>
+                    <button type="button" class="button" ng-click='updateOutput(5)'>5</button>
+                    <button type="button" class="button" ng-click='updateOutput(6)'>6</button>
+                    <button type="button" class="button l" ng-click='times()'>x</button>
+                </div>
+
+                <div class="calc-button-row">
+                    <button type="button" class="button" ng-click='updateOutput(1)'>1</button>
+                    <button type="button" class="button" ng-click='updateOutput(2)'>2</button>
+                    <button type="button" class="button" ng-click='updateOutput(3)'>3</button>
+                    <button type="button" class="button l" ng-click='divided()'>÷</button>
+                </div>
+
+                <div class="calc-button-row">
+                    <button type="button" class="button" ng-click="updateOutput('.')">.</button>
+                    <button type="button" class="button" ng-click='updateOutput(0)'>0</button>
+                    <button type="button" class="button equal " ng-click="equal()" style="width:215px">RESULT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
