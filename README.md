@@ -1,6 +1,6 @@
 # Simple Calculator Based on AngularJS
 Simple Calculator Using Angular JS and HTML and CSS
-Online sample @ https://simplecalculator-3761c.firebaseapp.com/
+Online sample @ https://simple-e0aae.firebaseapp.com/
 
 # Function and look
 * Addition
